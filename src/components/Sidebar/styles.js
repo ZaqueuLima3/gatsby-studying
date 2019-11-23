@@ -9,6 +9,6 @@ export const SidebarWrapper = styled.aside`
   padding: 2rem;
   position: fixed;
   text-align: center;
-  border-right: 1px solid #38444d;
-  background-color: #192734;
+  border-right: 1px solid var(--borders);
+  background-color: var(--mediumBackground);
 `
