@@ -1,7 +1,8 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import media from "styled-media-query"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-export const PostItemLink = styled(Link)`
+export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
@@ -28,6 +29,13 @@ export const PostItemWrapper = styled.section`
     flex-direction: column;
     justify-content: center;
   }
+
+  ${media.lessThan("large")`
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem 1rem;
+  `}
 `
 
 export const PostItemTag = styled.div`
@@ -42,6 +50,14 @@ export const PostItemTag = styled.div`
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
+
+  ${media.lessThan("large")`
+    min-width: auto;
+    min-height: auto;
+    border-radius: 4px;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+  `}
 `
 
 export const PostItemInfo = styled.div`
@@ -53,6 +69,10 @@ export const PostItemInfo = styled.div`
     line-height: 1.1;
     margin: 0.8rem 0;
   }
+
+  ${media.lessThan("large")`
+    margin: 1.2rem 0 0;
+  `}
 `
 
 export const PostItemDate = styled.time`

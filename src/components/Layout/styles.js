@@ -14,6 +14,10 @@ export const LayoutMain = styled.main`
   padding: 0 3.75rem 0 20rem;
   background: var(--background);
 
+  ${media.lessThan("large")`
+    padding:  66.19px 0 61px;
+  `}
+
   body#grid & {
     grid-template-areas:
       "posts"
