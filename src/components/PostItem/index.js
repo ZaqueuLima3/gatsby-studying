@@ -21,14 +21,14 @@ const PostItem = ({
     direction="right"
     duration={0.6}
   >
-    <S.PostItemWrapper>
-      <S.PostItemTag background={background}>{category}</S.PostItemTag>
+    <S.PostItemWrapper backgroundBorder={background}>
       <S.PostItemInfo>
+        <S.PostItemTitle>{title}</S.PostItemTitle>
+        <S.PostItemTag background={background}>{category}</S.PostItemTag>
+        <S.PostItemDescription>{description}</S.PostItemDescription>
         <S.PostItemDate>
           {date} • {timeToRead}
         </S.PostItemDate>
-        <S.PostItemTitle>{title}</S.PostItemTitle>
-        <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>
   </S.PostItemLink>

@@ -57,3 +57,11 @@ export const SearchWrapper = styled.section`
     display: none;
   }
 `
+
+export const ListContainer = styled.section`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2rem;
+`

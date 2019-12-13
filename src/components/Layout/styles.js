@@ -11,11 +11,11 @@ export const LayoutWrapper = styled.section`
 export const LayoutMain = styled.main`
   width: 100%;
   min-height: 100vh;
-  padding: 0 3.75rem 0 20rem;
+  padding: 4rem 0 0 18rem;
   background: var(--background);
 
   ${media.lessThan("large")`
-    padding:  66.19px 0 61px;
+    padding:  78.19px 0 61px;
   `}
 
   body#grid & {

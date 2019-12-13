@@ -3,7 +3,7 @@ date: 2019-01-03 05:54:23
 title: Two things are infinite
 description: And I'm not sure about the universe.
 category: Misc
-background: "#7aab13"
+background: "#58C44E"
 ---
 
 # Lorem ipsum

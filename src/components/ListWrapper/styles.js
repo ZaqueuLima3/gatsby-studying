@@ -1,5 +1,13 @@
 import styled from "styled-components"
 
+export const ListContainer = styled.section`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2rem;
+`
+
 export const ListWrapper = styled.section`
   body#grid & {
     background-color: var(--borders);

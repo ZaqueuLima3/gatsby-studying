@@ -24,7 +24,9 @@ const Search = () => {
             },
           }}
         />
-        <Hits hitComponent={Hit} />
+        <S.ListContainer>
+          <Hits hitComponent={Hit} />
+        </S.ListContainer>
       </InstantSearch>
     </S.SearchWrapper>
   )

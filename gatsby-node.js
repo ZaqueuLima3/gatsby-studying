@@ -33,11 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
               slug
             }
             frontmatter {
-              date(
-                fromNow: true
-                locale: "pt-br"
-                formatString: "DD [de] MMM [de] YYYY"
-              )
+              date(locale: "pt-br", formatString: "DD [de] MMM [de] YYYY")
               background
               category
               description

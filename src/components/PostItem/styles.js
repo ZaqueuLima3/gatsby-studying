@@ -21,7 +21,10 @@ export const PostItemWrapper = styled.section`
   display: flex;
   align-items: center;
   padding: 2rem 3rem;
-  border-bottom: 1px solid var(--borders);
+  margin-bottom: 35px;
+  background-color: var(--mediumBackground);
+  border-left: 30px solid ${p => p.backgroundBorder};
+  border-radius: 24px;
 
   body#grid & {
     border: none;
@@ -39,24 +42,21 @@ export const PostItemWrapper = styled.section`
 `
 
 export const PostItemTag = styled.div`
-  min-width: 90px;
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 5px 15px;
+  align-self: flex-start;
   background-color: ${p => p.background};
-  border-radius: 50%;
+  border-radius: 4px;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
+  white-space: nowrap;
+  box-sizing: content-box;
+  margin: 0.8rem 0;
 
   ${media.lessThan("large")`
-    min-width: auto;
-    min-height: auto;
+    padding: 5px 10px;
     border-radius: 4px;
-    padding: 0.3rem;
-    font-size: 1.1rem;
   `}
 `
 
@@ -77,12 +77,13 @@ export const PostItemInfo = styled.div`
 
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
+  margin-top: 0.8rem;
 `
 
 export const PostItemTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
-  margin: 0.2rem 0 0.5rem;
+  margin: 0.2rem 0 0;
 
   body#grid & {
     margin-bottom: 1.5rem;

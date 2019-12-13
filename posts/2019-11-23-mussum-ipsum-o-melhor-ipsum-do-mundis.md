@@ -1,10 +1,10 @@
 ---
 title: Mussum Ipsum o melhor ipsum do mundis
 description: 'Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi'
-date: '2019_11_23 09:56:41'
+date: '2019-08-22 08:51:23'
 thumbnail: /assets/img/alberta-canada-4i-1366x768.jpg
 category: html
-background: '#EB7728'
+background: '#C44EB8'
 ---
 ## Mussum Ipsum o melhor ipsum do mundis
 

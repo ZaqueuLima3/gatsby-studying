@@ -2,8 +2,8 @@
 date: 2019-01-05 05:54:23
 title: Lorem Lorem ipsum
 description: And I'm not sure lorem.
-category: JS
-background: "#dddd33"
+category: JavaScript in the
+background: "#4EA8C4"
 ---
 
 # Lorem ipsum

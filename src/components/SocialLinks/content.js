@@ -15,10 +15,6 @@ const links = [
     label: "Instagram",
     url: "https://www.instagram.com/zaqueu_sants/",
   },
-  {
-    label: "Unsplash",
-    url: "https://unsplash.com/@willianjusten",
-  },
 ]
 
 export default links

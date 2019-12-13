@@ -2,8 +2,9 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const SocialLinkWrapper = styled.nav`
-  margin: 2rem auto;
-  width: 100%;
+  width: 80%;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--background);
 
   ${media.lessThan("large")`
     display: none;

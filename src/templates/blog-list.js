@@ -19,36 +19,38 @@ const BlogList = props => {
   return (
     <Layout>
       <SEO title="Home" />
-      <S.ListWrapper>
-        {postList.map(
-          ({
-            node: {
-              fields: { slug },
-              frontmatter: { background, category, date, description, title },
-              timeToRead,
-            },
-          }) => (
-            <PostItem
-              key={slug}
-              slug={slug}
-              background={background}
-              category={category}
-              date={date}
-              timeToRead={`${timeToRead} min de leitura`}
-              title={title}
-              description={description}
-            />
-          )
-        )}
-      </S.ListWrapper>
-      <Pagination
-        isFirst={isFirst}
-        isLast={isLast}
-        currentPage={currentPage}
-        numPages={numPages}
-        prevPage={prevPage}
-        nextPage={nextPage}
-      />
+      <S.ListContainer>
+        <S.ListWrapper>
+          {postList.map(
+            ({
+              node: {
+                fields: { slug },
+                frontmatter: { background, category, date, description, title },
+                timeToRead,
+              },
+            }) => (
+              <PostItem
+                key={slug}
+                slug={slug}
+                background={background}
+                category={category}
+                date={date}
+                timeToRead={`${timeToRead} min de leitura`}
+                title={title}
+                description={description}
+              />
+            )
+          )}
+        </S.ListWrapper>
+        <Pagination
+          isFirst={isFirst}
+          isLast={isLast}
+          currentPage={currentPage}
+          numPages={numPages}
+          prevPage={prevPage}
+          nextPage={nextPage}
+        />
+      </S.ListContainer>
     </Layout>
   )
 }
