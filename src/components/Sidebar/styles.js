@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { darken, lighten } from "polished"
 
 export const SidebarWrapper = styled.div`
   width: 18rem;
@@ -34,12 +35,12 @@ export const Search = styled(AniLink)`
   transition: all 0.1s ease-in-out;
 
   &:hover {
-    background-color: var(--background);
     box-shadow: 8px 12px 13px -3px rgba(0, 0, 0, 0.26);
+    background-color: ${lighten(0.02, "#282F3C")};
   }
 
   &:active {
     box-shadow: 2px 4px 5px -3px rgba(0, 0, 0, 0.26);
-    background-color: var(--mediumBackground);
+    background-color: ${darken(0.02, "#282F3C")};
   }
 `
